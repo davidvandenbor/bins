@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+body {
+  background:white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5vw;
+  text-align: center;
+  font-weight: normal;
+}
+
+/** ------------------------------------------- //
+*  @group:  MENU 
+*/
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-right: none;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+nav a:first-of-type {
+  margin-right: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 10px 10px;
+  text-align: center;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #ccc;
+  /* width: 100%; */
+}
+
+nav a:hover {
+  background: darkorange;
+  color: black;
+  transition: all 1s ease;
+}
+
+/* The javascript code uses this to stick the .active classon the current link, depending on which page is loaded! */
+.active {
+  transition: all 0.5s ease;
+  background: rgb(255, 89, 0);
+  color: white;
+}
+
+nav label {
+  display: none;
+}
+
+/* responsive vanaf hier */
+
+@media (max-width: 500px) {
+  nav label {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 5px 35px 25px;
+  }
+
+  nav,
+  nav a {
+    display: block;
+    font-size: 40px;
+    max-height: 40px;
+  }
+
+  nav:hover {
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding-bottom: 50px;
+    overflow: hidden;
+    max-height: 470px;
+  }
+}
+
+/* @end MENU -----------  */
+
+</style>
+</head>
+<body>
+
+<nav>
+    <label>Menu</label>
+   <a href="pagename.html">MySite</a>
+   <a href="pagename.html">About</a>
+   <a href="pagename.html">Services</a>
+   <a href="pagename.html">Products</a>
+   <a href="pagename.html">Jobs</a>
+   <a href="pagename.html">Contact</a>
+</nav>
+
+<h1>For desktop and mobile</h1>
+<!--boot js--><script id="jsbin-javascript" defer>// console.clear()
+
+</script>
+</body>
+</html>
